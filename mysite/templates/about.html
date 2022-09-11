@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+{% block title %} About {% endblock %}
+
+{% block link %}<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">{% endblock %}
+{% block content %}
+    <article>
+       <div id="social-platforms">
+<h1>I am in social networks</h1>
+
+<a class="btn btn-icon btn-telegram" href="https://t.me/ruby_azz" target="_blank"><i class="fa fa-telegram"></i><span>Telegram</span></a>
+<a class="btn btn-icon btn-instagram" href="https://www.instagram.com/ers_abd/" target="_blank"><i class="fa fa-instagram"></i><span>Instagram</span></a>
+<a class="btn btn-icon btn-youtube" href="https://www.youtube.com/channel/UCLGXTliMBpotJXeJjcmwq3A/featured" target="_blank"><i class="fa fa-youtube"></i><span>Youtube</span></a>
+<a class="btn btn-icon btn-github" href="https://github.com/rubyazz" target="_blank"><i class="fa fa-github"></i><span>Github</span></a>
+</div>
+        <style>
+            @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+
+/*Ignore me, I'm just page styling*/
+html {font-family: 'Roboto', sans-serif;font-size:16px;line-height:1em;height:100%;}
+body {
+  background: #ffffff;
+  background: -moz-linear-gradient(-45deg, #ffffff 0%, #ffffff 50%, #F2F2F2 50%, #F2F2F2 50%, #F2F2F2 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ffffff), color-stop(50%,#ffffff), color-stop(50%,#F2F2F2), color-stop(50%,#F2F2F2), color-stop(100%,#F2F2F2));
+  background: -webkit-linear-gradient(-45deg, #ffffff 0%,#ffffff 50%,#F2F2F2 50%,#F2F2F2 50%,#F2F2F2 100%);
+  background: -o-linear-gradient(-45deg, #ffffff 0%,#ffffff 50%,#F2F2F2 50%,#F2F2F2 50%,#F2F2F2 100%);
+  background: -ms-linear-gradient(-45deg, #ffffff 0%,#ffffff 50%,#F2F2F2 50%,#F2F2F2 50%,#F2F2F2 100%);
+  background: linear-gradient(135deg, #ffffff 0%,#ffffff 50%,#F2F2F2 50%,#F2F2F2 50%,#F2F2F2 100%);
+}
+
+h1 {font-size:1.5em;margin-bottom:55px;}
+
+#social-platforms {
+  position:relative;
+  font-size:1rem;
+  text-align:center;
+  height:250px;
+  overflow:hidden;
+}
+
+/*Pen code from this point on*/
+.btn {
+  clear:both;
+  white-space:nowrap;
+  font-size:.8em;
+  display:inline-block;
+  border-radius:5px;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.35);
+  margin:2px;
+  -webkit-transition:all .5s;
+  -moz-transition:all .5s;
+  transition:all .5s;
+  overflow:hidden
+}
+
+.btn:hover {
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.45);
+}
+
+.btn:focus {
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.btn > span,.btn-icon > i {
+  float:left;
+  padding:13px;
+  -webkit-transition:all .5s;
+  -moz-transition:all .5s;
+  transition:all .5s;
+  line-height:1em
+}
+
+.btn > span {
+  padding:14px 18px 16px;
+  white-space:nowrap;
+  color:#FFF;
+  background:#b8b8b8
+}
+
+.btn:focus > span {
+  background:#9a9a9a
+}
+
+.btn-icon > i {
+  border-radius:5px 0 0 5px;
+  position:relative;
+  width:13px;
+  text-align:center;
+  font-size:1.25em;
+  color:#fff;
+  background:#212121
+}
+
+.btn-icon > i:after {
+  content:"";
+  border:8px solid;
+  border-color:transparent transparent transparent #222;
+  position:absolute;
+  top:13px;
+  right:-15px
+}
+
+.btn-icon:hover > i,.btn-icon:focus > i {
+  color:#FFF
+}
+
+.btn-icon > span {
+  border-radius:0 5px 5px 0
+}
+
+/*Facebook*/
+.btn-telegram:hover > i,.btn-facebook:focus > i {
+  color:#55acee
+}
+
+.btn-telegram > span {
+  background:#55acee
+}
+
+/*Twitter*/
+.btn-instagram:hover > i,.btn-twitter:focus > i {
+  color:#e46880
+}
+
+.btn-instagram > span {
+  background:#e46880
+}
+
+/*Google*/
+.btn-youtube:hover > i,.btn-googleplus:focus > i {
+  color:#dd4b39
+}
+
+.btn-youtube > span {
+  background:#dd4b39
+}
+
+/*Pinterest*/
+.btn-github:hover > i,.btn-pinterest:focus > i {
+  color:black
+}
+
+.btn-github > span {
+  background:black
+}
+
+
+
+
+        </style>
+    </article>
+{% endblock %}

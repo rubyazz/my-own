@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Portfolio{% endblock %}
+
+
+{% block content %}
+
+    {% for portfolio in portfolios %}
+        <article>
+            <div class="ddd">
+            <h1>{{ portfolio.name }}</h1>
+            <img src="{{ portfolio.image.url }}" class="card-img-top" alt="sdifs">
+            <a href="{{ portfolio.link }}" target="_blank">Link to project!</a>
+        </div>
+        </article>
+    {% endfor%}
+
+<style>
+    .vo h1{font-size:25px;color:black;}
+    .vo a{color:black;}
+
+    .ddd{
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+</style>
+{% endblock %}

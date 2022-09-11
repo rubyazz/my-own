@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Blog{% endblock %}
+
+
+{% block content %}
+	<div class="row">
+		<div id="ddd" class="col-sm-12 col-md-11  pb-4">
+			<div class="card h-100" style="border:none">
+				<img src="{{post.image.url}}" class="card-img-top" alt="{}">
+			  	<div class="card-body">
+					<h5 class="card-title">{{ post.name }}</h5>
+				  	<p id="content" class="card-text">{{ post.content|safe|linebreaks  }}</p>
+				  	<a href="{% url 'blog' %}"  id="btn" class="btn btn-primary">To back</a>
+			  	</div>
+			</div>
+		</div>
+	</div>
+
+<style>
+#btn{
+padding:10px 30px;
+}
+
+#content{
+color:black;
+}
+ #ddd{
+ margin-top:20px;
+ }
+</style>
+
+
+{% endblock %}
